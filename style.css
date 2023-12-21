@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Texturina', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  perspective: 1000px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card{
+  display: flex;
+  transform-style: preserve-3d;
+  width: 80rem;
+}
+
+.shoe{
+  display: flex;
+  justify-content: center;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  margin: 15px 10px;
+  gap: 1.5rem;
+}
+
+.sizes{
+  display: flex;
+  justify-content: space-between;
+  width: 2rem;
+  gap: 3rem;
+}
+
+.purchase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.benefits {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.benefits img {
+  width: 1rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  padding: 10px 40px;
+  margin-top: 45px;
+  border: none;
+  cursor: pointer;
+  width: 6rem;
+  text-align: center;
+  color: #fff;
+}
+
+.button-1 {
+  background-color: #3498db;
+}
+
+.button-2 {
+  background-color: #e74c3c;
+}
+
+.button-3 {
+  background-color: #2ecc71;
+}
+.line {
+  width: 35rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    overflow: hidden;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+  }
+  .shoe {
+    max-height: 16rem;
+  }
+  .purchase {
+    align-items: center;
+    flex-direction: column;
+  }
+  .center {
+    align-items: baseline;
+    margin: 8px;
+  }
+  .sizes {
+    display: flex;
+    height: 1.6rem;
+    flex-direction: row; 
+  }
+
+  .benefits {
+    flex-direction: row; 
+    justify-content: center;
+  }
+
+  .button-container {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+  .right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .vertical {
+    display: none;
+  }
+}
